@@ -1,0 +1,23 @@
+<Project>
+  <PropertyGroup>
+    <!-- Enable central package version management -->
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+
+ 
+  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageVersion Include="FluentValidation" Version="11.8.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageVersion Include="FluentValidation" Version="11.11.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageVersion Include="FluentValidation" Version="11.8.0" />
+  </ItemGroup>
+
+
+</Project>
